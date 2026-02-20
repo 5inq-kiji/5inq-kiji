@@ -1,16 +1,44 @@
-## Hi there 👋
+<!-- HEADER -->
+<div align="center">
+  <img width="100%" src="assets/header.svg"/>
+</div>
 
-<!--
-**5inq-kiji/5inq-kiji** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- ABOUT -->
+<div align="center">
+  <img width="100%" src="assets/about.svg"/>
+</div>
 
-Here are some ideas to get you started:
+<!-- DIVIDER -->
+<div align="center">
+  <img width="100%" src="assets/divider.svg"/>
+</div>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!-- SKILLS -->
+<div align="center">
+  <img width="100%" src="assets/skills.svg"/>
+</div>
+
+<!-- DIVIDER -->
+<div align="center">
+  <img width="100%" src="assets/divider.svg"/>
+</div>
+
+<!-- PROJECTS -->
+<div align="center">
+  <img width="100%" src="assets/projects.svg"/>
+</div>
+
+<!-- DIVIDER -->
+<div align="center">
+  <img width="100%" src="assets/divider.svg"/>
+</div>
+
+<!-- TERMINAL -->
+<div align="center">
+  <img width="100%" src="assets/terminal.svg"/>
+</div>
+
+<!-- FOOTER -->
+<div align="center">
+  <img width="100%" src="assets/footer.svg"/>
+</div>

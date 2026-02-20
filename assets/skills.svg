@@ -1,0 +1,110 @@
+<svg width="900" height="380" viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .fi1 { animation: fadeIn 0.6s ease 0.1s forwards; opacity: 0; }
+      .fi2 { animation: fadeIn 0.6s ease 0.3s forwards; opacity: 0; }
+      .fi3 { animation: fadeIn 0.6s ease 0.5s forwards; opacity: 0; }
+      .fi4 { animation: fadeIn 0.6s ease 0.7s forwards; opacity: 0; }
+      @keyframes fadeIn { to { opacity: 1; } }
+      .blink { animation: blink 2s step-end infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect width="900" height="380" fill="#080808"/>
+
+  <text x="20" y="30" font-family="'Share Tech Mono', monospace" font-size="13" fill="#606060" class="fi1">// CAPABILITY MATRIX</text>
+  <line x1="20" y1="38" x2="880" y2="38" stroke="#1e1e1e" stroke-width="1"/>
+
+  <text x="20" y="60" font-family="'Share Tech Mono', monospace" font-size="11" fill="#404040" class="fi1">[ LANGUAGE ENGINES ]</text>
+
+  <text x="20" y="84" font-family="'Share Tech Mono', monospace" font-size="12" fill="#909090" class="fi2">C++</text>
+  <rect x="180" y="73" width="210" height="9" fill="#151515" rx="1"/>
+  <rect x="180" y="73" width="0" height="9" rx="1" fill="#404040">
+    <animate attributeName="width" from="0" to="126" dur="1.2s" begin="0.3s" fill="freeze"/>
+  </rect>
+  <text x="400" y="83" font-family="'Share Tech Mono', monospace" font-size="11" fill="#606060" class="fi2">60%</text>
+
+  <text x="20" y="108" font-family="'Share Tech Mono', monospace" font-size="12" fill="#909090" class="fi2">Lua / MoonScript</text>
+  <rect x="180" y="97" width="210" height="9" fill="#151515" rx="1"/>
+  <rect x="180" y="97" width="0" height="9" rx="1" fill="#707070">
+    <animate attributeName="width" from="0" to="199" dur="1.2s" begin="0.5s" fill="freeze"/>
+  </rect>
+  <text x="400" y="107" font-family="'Share Tech Mono', monospace" font-size="11" fill="#606060" class="fi2">95%</text>
+
+  <text x="20" y="132" font-family="'Share Tech Mono', monospace" font-size="12" fill="#909090" class="fi2">PHP / Symfony</text>
+  <rect x="180" y="121" width="210" height="9" fill="#151515" rx="1"/>
+  <rect x="180" y="121" width="0" height="9" rx="1" fill="#545454">
+    <animate attributeName="width" from="0" to="168" dur="1.2s" begin="0.7s" fill="freeze"/>
+  </rect>
+  <text x="400" y="131" font-family="'Share Tech Mono', monospace" font-size="11" fill="#606060" class="fi2">80%</text>
+
+  <text x="20" y="156" font-family="'Share Tech Mono', monospace" font-size="12" fill="#909090" class="fi2">JS / Svelte</text>
+  <rect x="180" y="145" width="210" height="9" fill="#151515" rx="1"/>
+  <rect x="180" y="145" width="0" height="9" rx="1" fill="#343434">
+    <animate attributeName="width" from="0" to="84" dur="1.2s" begin="0.9s" fill="freeze"/>
+  </rect>
+  <text x="400" y="155" font-family="'Share Tech Mono', monospace" font-size="11" fill="#606060" class="fi2">40%</text>
+
+  <text x="20" y="180" font-family="'Share Tech Mono', monospace" font-size="12" fill="#909090" class="fi2">C#</text>
+  <rect x="180" y="169" width="210" height="9" fill="#151515" rx="1"/>
+  <rect x="180" y="169" width="0" height="9" rx="1" fill="#404040">
+    <animate attributeName="width" from="0" to="126" dur="1.2s" begin="1.1s" fill="freeze"/>
+  </rect>
+  <text x="400" y="179" font-family="'Share Tech Mono', monospace" font-size="11" fill="#606060" class="fi2">60%</text>
+
+  <line x1="20" y1="198" x2="430" y2="198" stroke="#141414" stroke-width="1"/>
+  <text x="20" y="218" font-family="'Share Tech Mono', monospace" font-size="11" fill="#404040" class="fi2">[ INFRASTRUCTURE ]</text>
+
+  <text x="20" y="242" font-family="'Share Tech Mono', monospace" font-size="12" fill="#909090" class="fi3">Linux</text>
+  <rect x="180" y="231" width="210" height="9" fill="#151515" rx="1"/>
+  <rect x="180" y="231" width="0" height="9" rx="1" fill="#545454">
+    <animate attributeName="width" from="0" to="168" dur="1.2s" begin="1.3s" fill="freeze"/>
+  </rect>
+  <text x="400" y="241" font-family="'Share Tech Mono', monospace" font-size="11" fill="#606060" class="fi3">80%</text>
+  <text x="20" y="255" font-family="'Share Tech Mono', monospace" font-size="9" fill="#383838" class="fi3">Fedora / Debian / Ubuntu</text>
+
+  <text x="20" y="280" font-family="'Share Tech Mono', monospace" font-size="12" fill="#909090" class="fi3">Proxmox / Containers</text>
+  <rect x="180" y="269" width="210" height="9" fill="#151515" rx="1"/>
+  <rect x="180" y="269" width="0" height="9" rx="1" fill="#404040">
+    <animate attributeName="width" from="0" to="126" dur="1.2s" begin="1.5s" fill="freeze"/>
+  </rect>
+  <text x="400" y="279" font-family="'Share Tech Mono', monospace" font-size="11" fill="#606060" class="fi3">60%</text>
+  <text x="20" y="293" font-family="'Share Tech Mono', monospace" font-size="9" fill="#383838" class="fi3">VMs / Podman / Cockpit</text>
+
+  <text x="20" y="318" font-family="'Share Tech Mono', monospace" font-size="12" fill="#909090" class="fi3">SQL</text>
+  <rect x="180" y="307" width="210" height="9" fill="#151515" rx="1"/>
+  <rect x="180" y="307" width="0" height="9" rx="1" fill="#707070">
+    <animate attributeName="width" from="0" to="199" dur="1.2s" begin="1.7s" fill="freeze"/>
+  </rect>
+  <text x="400" y="317" font-family="'Share Tech Mono', monospace" font-size="11" fill="#606060" class="fi3">95%</text>
+  <text x="20" y="331" font-family="'Share Tech Mono', monospace" font-size="9" fill="#383838" class="fi3">MySQL / SQLite / PostgreSQL</text>
+
+  <line x1="450" y1="42" x2="450" y2="350" stroke="#1a1a1a" stroke-width="1"/>
+
+ <text x="470" y="60" font-family="'Share Tech Mono', monospace" font-size="11" fill="#404040" class="fi1">[ DOMAIN EXPERTISE ]</text>
+
+  <rect x="470" y="68" width="390" height="60" fill="#0d0d0d" rx="2"/>
+  <rect x="470" y="68" width="3" height="60" fill="#c0c0c0" rx="1"/>
+  <text x="485" y="93" font-family="'Share Tech Mono', monospace" font-size="13" fill="#d0d0d0" class="fi2">WoW Emulation</text>
+  <text x="485" y="114" font-family="'Share Tech Mono', monospace" font-size="10" fill="#505050" class="fi2">AzerothCore / TrinityCore / Eluna — 13 ans</text>
+
+  <rect x="470" y="140" width="390" height="60" fill="#0d0d0d" rx="2"/>
+  <rect x="470" y="140" width="3" height="60" fill="#808080" rx="1"/>
+  <text x="485" y="165" font-family="'Share Tech Mono', monospace" font-size="13" fill="#d0d0d0" class="fi2">Game Architecture</text>
+  <text x="485" y="186" font-family="'Share Tech Mono', monospace" font-size="10" fill="#505050" class="fi2">Roblox / Browser Games / Engine Design</text>
+
+  <rect x="470" y="212" width="390" height="60" fill="#0d0d0d" rx="2"/>
+  <rect x="470" y="212" width="3" height="60" fill="#505050" rx="1"/>
+  <text x="485" y="237" font-family="'Share Tech Mono', monospace" font-size="13" fill="#d0d0d0" class="fi3">Digital Platforms</text>
+  <text x="485" y="258" font-family="'Share Tech Mono', monospace" font-size="10" fill="#505050" class="fi3">SaaS / Web Infrastructure / API Design</text>
+
+  <rect x="470" y="284" width="390" height="60" fill="#0d0d0d" rx="2"/>
+  <rect x="470" y="284" width="3" height="60" fill="#383838" rx="1"/>
+  <text x="485" y="309" font-family="'Share Tech Mono', monospace" font-size="13" fill="#d0d0d0" class="fi3">Code Craftsmanship</text>
+  <text x="485" y="330" font-family="'Share Tech Mono', monospace" font-size="10" fill="#505050" class="fi3">Architecture / Clean Code / Performance</text>
+
+  <line x1="20" y1="356" x2="880" y2="356" stroke="#141414" stroke-width="1"/>
+  <text x="20" y="372" font-family="'Share Tech Mono', monospace" font-size="10" fill="#303030" class="fi4">MATRIX SCAN COMPLETE <tspan class="blink">_</tspan></text>
+  <text x="730" y="372" font-family="'Share Tech Mono', monospace" font-size="10" fill="#282828" class="fi4">kiji.dev // 2077</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .scan { animation: scan 4s linear infinite; }
+      @keyframes scan {
+        0% { transform: translateY(-60px); opacity: 0.4; }
+        100% { transform: translateY(260px); opacity: 0; }
+      }
+      .blink { animation: blink 1.5s step-end infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .flicker { animation: flicker 8s ease-in-out infinite; }
+      @keyframes flicker {
+        0%, 95%, 100% { opacity: 1; }
+        96% { opacity: 0.4; }
+        97% { opacity: 1; }
+        98% { opacity: 0.5; }
+        99% { opacity: 1; }
+      }
+      .glitch { animation: glitch 6s infinite; }
+      @keyframes glitch {
+        0%, 90%, 100% { transform: translate(0); }
+        92% { transform: translate(-2px, 1px); }
+        94% { transform: translate(2px, -1px); }
+        96% { transform: translate(-1px, 0); }
+      }
+      .fi1 { animation: fadeIn 0.8s ease 0s forwards; opacity: 0; }
+      .fi2 { animation: fadeIn 0.8s ease 0.3s forwards; opacity: 0; }
+      .fi3 { animation: fadeIn 0.8s ease 0.6s forwards; opacity: 0; }
+      .fi4 { animation: fadeIn 0.8s ease 0.9s forwards; opacity: 0; }
+      @keyframes fadeIn { to { opacity: 1; } }
+    </style>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0e0e0e" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c0c0c0" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c0c0c0" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#c0c0c0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="200" fill="#080808"/>
+  <rect width="900" height="200" fill="url(#grid)"/>
+  <rect class="scan" x="0" y="0" width="900" height="60" fill="url(#scanGrad)"/>
+
+  <rect x="0" y="0" width="3" height="200" fill="#c0c0c0" class="fi1"/>
+
+  <path d="M 22 22 L 22 12 L 32 12" stroke="#505050" stroke-width="1" fill="none" class="fi1"/>
+  <path d="M 878 22 L 878 12 L 868 12" stroke="#505050" stroke-width="1" fill="none" class="fi1"/>
+  <path d="M 22 178 L 22 188 L 32 188" stroke="#505050" stroke-width="1" fill="none" class="fi1"/>
+  <path d="M 878 178 L 878 188 L 868 188" stroke="#505050" stroke-width="1" fill="none" class="fi1"/>
+
+  <line x1="230" y1="20" x2="230" y2="180" stroke="#1a1a1a" stroke-width="1" class="fi2"/>
+
+  <text x="125" y="158" font-family="'Share Tech Mono', monospace" font-size="140" font-weight="900" fill="#ffffff" text-anchor="middle" filter="url(#softglow)" class="glitch flicker">5</text>
+  <text x="125" y="180" font-family="'Share Tech Mono', monospace" font-size="10" fill="#2a2a2a" text-anchor="middle" class="fi3">DESIGNATION</text>
+
+  <text x="258" y="46" font-family="'Share Tech Mono', monospace" font-size="11" fill="#383838" class="fi1">ARASAKA CORPORATION // KIJI FACTION</text>
+  <line x1="258" y1="52" x2="620" y2="52" stroke="#1a1a1a" stroke-width="1" class="fi1"/>
+
+  <text x="258" y="100" font-family="'Share Tech Mono', monospace" font-size="54" font-weight="bold" fill="#f0f0f0" filter="url(#glow)" class="fi2 flicker">5inq</text>
+
+  <text x="258" y="130" font-family="'Share Tech Mono', monospace" font-size="13" fill="#484848" class="fi3">SYSTEMS ARCHITECT // LANGUAGE ENGINE SPECIALIST</text>
+
+  <text x="258" y="150" font-family="'Share Tech Mono', monospace" font-size="12" fill="#383838" class="fi3">STATUS :</text>
+  <text x="336" y="150" font-family="'Share Tech Mono', monospace" font-size="12" fill="#c0c0c0" class="fi4">ACTIVE</text>
+  <circle cx="394" cy="146" r="4" fill="#c0c0c0" class="blink fi4"/>
+
+  <text x="258" y="170" font-family="'Share Tech Mono', monospace" font-size="12" fill="#383838" class="fi3">DOMAIN :</text>
+  <text x="336" y="170" font-family="'Share Tech Mono', monospace" font-size="12" fill="#606060" class="fi4">kiji.dev</text>
+
+  <rect x="670" y="22" width="60" height="9" fill="#0f0f0f" rx="1" class="fi2"/>
+  <rect x="670" y="35" width="42" height="9" fill="#0d0d0d" rx="1" class="fi2"/>
+  <rect x="670" y="48" width="72" height="9" fill="#0f0f0f" rx="1" class="fi3"/>
+  <rect x="670" y="61" width="36" height="9" fill="#0d0d0d" rx="1" class="fi3"/>
+  <text x="742" y="30" font-family="'Share Tech Mono', monospace" font-size="9" fill="#242424" class="fi2">0x4B494A49</text>
+  <text x="742" y="43" font-family="'Share Tech Mono', monospace" font-size="9" fill="#222222" class="fi3">CLEARANCE:07</text>
+  <text x="742" y="56" font-family="'Share Tech Mono', monospace" font-size="9" fill="#222222" class="fi3">NODE:ACTIVE</text>
+  <text x="742" y="69" font-family="'Share Tech Mono', monospace" font-size="9" fill="#202020" class="fi4">SIG:VERIFIED</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .t1  { animation: fadeIn 0.3s ease 0.5s  forwards; opacity: 0; }
+      .t2  { animation: fadeIn 0.3s ease 1.2s  forwards; opacity: 0; }
+      .t3  { animation: fadeIn 0.3s ease 1.6s  forwards; opacity: 0; }
+      .t4  { animation: fadeIn 0.3s ease 2.3s  forwards; opacity: 0; }
+      .t5  { animation: fadeIn 0.3s ease 2.7s  forwards; opacity: 0; }
+      .t6  { animation: fadeIn 0.3s ease 3.1s  forwards; opacity: 0; }
+      .t7  { animation: fadeIn 0.3s ease 3.8s  forwards; opacity: 0; }
+      .t8  { animation: fadeIn 0.3s ease 4.2s  forwards; opacity: 0; }
+      .t9  { animation: fadeIn 0.3s ease 4.9s  forwards; opacity: 0; }
+      @keyframes fadeIn { to { opacity: 1; } }
+      .cursor { animation: blink 1s step-end infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect width="900" height="220" fill="#080808" rx="3"/>
+  <rect width="900" height="220" fill="none" stroke="#141414" stroke-width="1" rx="3"/>
+
+  <rect width="900" height="28" fill="#0d0d0d" rx="3"/>
+  <rect y="14" width="900" height="14" fill="#0d0d0d"/>
+  <circle cx="18" cy="14" r="5" fill="#1e1e1e"/>
+  <circle cx="34" cy="14" r="5" fill="#1e1e1e"/>
+  <circle cx="50" cy="14" r="5" fill="#1e1e1e"/>
+  <text x="450" y="19" font-family="'Share Tech Mono', monospace" font-size="10" fill="#282828" text-anchor="middle">5inq@kiji — bash</text>
+
+  <text x="20" y="54"  font-family="'Share Tech Mono', monospace" font-size="12" fill="#505050" class="t1">5inq@kiji:~$</text>
+  <text x="130" y="54" font-family="'Share Tech Mono', monospace" font-size="12" fill="#c0c0c0" class="t1">whoami</text>
+
+  <text x="20" y="72"  font-family="'Share Tech Mono', monospace" font-size="12" fill="#606060" class="t2">5inq — systems architect · language engine specialist · code craftsman</text>
+
+  <text x="20" y="96"  font-family="'Share Tech Mono', monospace" font-size="12" fill="#505050" class="t3">5inq@kiji:~$</text>
+  <text x="130" y="96" font-family="'Share Tech Mono', monospace" font-size="12" fill="#c0c0c0" class="t3">cat contact.txt</text>
+
+  <text x="20" y="114" font-family="'Share Tech Mono', monospace" font-size="12" fill="#505050" class="t4">mail     :</text>
+  <text x="120" y="114" font-family="'Share Tech Mono', monospace" font-size="12" fill="#909090" class="t4">5inq@kiji.dev</text>
+
+  <text x="20" y="132" font-family="'Share Tech Mono', monospace" font-size="12" fill="#505050" class="t5">discord  :</text>
+  <text x="120" y="132" font-family="'Share Tech Mono', monospace" font-size="12" fill="#808080" class="t5">5inq.kiji</text>
+
+  <text x="20" y="150" font-family="'Share Tech Mono', monospace" font-size="12" fill="#505050" class="t6">domain   :</text>
+  <text x="120" y="150" font-family="'Share Tech Mono', monospace" font-size="12" fill="#707070" class="t6">kiji.dev</text>
+
+  <!-- status -->
+  <text x="20" y="174"  font-family="'Share Tech Mono', monospace" font-size="12" fill="#505050" class="t7">5inq@kiji:~$</text>
+  <text x="130" y="174" font-family="'Share Tech Mono', monospace" font-size="12" fill="#c0c0c0" class="t7">status --quote</text>
+
+  <text x="20" y="192" font-family="'Share Tech Mono', monospace" font-size="12" fill="#383838" class="t8">"⏳ Je sais déjà comment ça se termine."</text>
+
+  <!-- cursor -->
+  <text x="20" y="212"  font-family="'Share Tech Mono', monospace" font-size="12" fill="#505050" class="t9">5inq@kiji:~$</text>
+  <text x="130" y="212" font-family="'Share Tech Mono', monospace" font-size="12" fill="#c0c0c0" class="cursor">█</text>
+</svg>
